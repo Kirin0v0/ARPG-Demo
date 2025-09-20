@@ -6,16 +6,10 @@ ARPG项目历时八个月，完成了包括但不限于玩家状态机、敌人�
 
 感谢在网络上分享技术的大家，项目框架/编辑器的部分灵感和思路来源于：
 
-* [唐老狮的游习堂]: https://www.yxtown.com
-
-* [Joker的ARPG合辑]: https://learn.u3d.cn/bundle/joker-arpg
-
-* [【Unity教程搬运】使用UI Builder、GraphView和脚本化对象创建行为树]: https://www.bilibili.com/video/BV1Yg4y1M7VX
-
-* [Unity技能系统和技能编辑器]: https://www.bilibili.com/video/BV12Eg1e9Ewo
-
-* [【Unity】一个开源的通用Buff系统 下载+教程]: https://www.bilibili.com/video/BV16e411H7Vx
-
-* [RecyclerView，基于UGUI的列表解决方案]: https://www.bilibili.com/video/BV1RAmxYXEmb
-
-* [用Unity制作一个极具扩展性的顶视角射击游戏战斗系统]: https://zhuanlan.zhihu.com/p/416805924
+* 唐老狮的游习堂：https://www.yxtown.com
+* Joker的ARPG合辑：https://learn.u3d.cn/bundle/joker-arpg 
+* 【Unity教程搬运】使用UI Builder、GraphView和脚本化对象创建行为树：https://www.bilibili.com/video/BV1Yg4y1M7VX 
+* Unity技能系统和技能编辑器：https://www.bilibili.com/video/BV12Eg1e9Ewo 
+* 【Unity】一个开源的通用Buff系统 下载+教程：https://www.bilibili.com/video/BV16e411H7Vx 
+* RecyclerView，基于UGUI的列表解决方案：https://www.bilibili.com/video/BV1RAmxYXEmb 
+* 用Unity制作一个极具扩展性的顶视角射击游戏战斗系统：https://zhuanlan.zhihu.com/p/416805924 
