@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="ChannelTemplate" style="flex-grow: 0; height: 40px; align-items: center; justify-content: flex-start; background-color: rgb(149, 149, 149); flex-direction: row; align-self: auto; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; -unity-slice-top: 0; -unity-slice-bottom: 0; margin-top: 4px; flex-shrink: 1; margin-right: 0; margin-bottom: 0; margin-left: 0; min-height: auto;">
+        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LabelChannelName" style="flex-grow: 1; -unity-text-align: upper-center; color: rgb(255, 255, 255); font-size: 16px;" />
+        <ui:Button text="⁝" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnMore" style="font-size: 16px; -unity-font-style: bold; flex-shrink: 0; margin-right: 8px;" />
+    </ui:VisualElement>
+</ui:UXML>

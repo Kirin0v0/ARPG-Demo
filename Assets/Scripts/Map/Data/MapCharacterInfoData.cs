@@ -1,0 +1,34 @@
+namespace Map.Data {
+public class MapCharacterInfoData 
+{
+    public int Id;
+    public string PrototypeId;
+    public int MapId;
+    public bool Enable;
+    public bool Reload;
+    public string Name;
+    public string Comment;
+    public float PositionX;
+    public float PositionY;
+    public float PositionZ;
+    public float ForwardAngle;
+    public string Type;
+    public int MaxHp;
+    public int MaxMp;
+    public float StunMeter;
+    public float StunReduceSpeed;
+    public float BreakMeter;
+    public float BreakReduceSpeed;
+    public int AtbLimit;
+    public int Stamina;
+    public int Strength;
+    public int Magic;
+    public int Reaction;
+    public int Luck;
+    public float NormalDamageMultiplier;
+    public float DefenceDamageMultiplier;
+    public float BrokenDamageMultiplier;
+    public int Experience;
+    public int Money;
+    public string Packages;
+}}

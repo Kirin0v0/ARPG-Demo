@@ -1,0 +1,43 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="MenuTop" style="flex-grow: 0; flex-direction: column; height: auto; width: auto; min-height: auto; flex-basis: auto; justify-content: space-between; opacity: 1; flex-wrap: nowrap; align-items: stretch; align-self: stretch; flex-shrink: 1; padding-top: 8px; padding-right: 4px; padding-bottom: 8px; padding-left: 4px; border-bottom-width: 1px; border-top-width: 0; border-right-width: 0; border-left-width: 0; border-left-color: rgb(26, 26, 26); border-right-color: rgb(26, 26, 26); border-top-color: rgb(26, 26, 26); border-bottom-color: rgb(26, 26, 26); border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; min-width: auto;">
+        <ui:VisualElement name="FirstLine" style="flex-grow: 1; height: 30px; flex-direction: row; align-items: stretch; max-width: none; min-width: auto;">
+            <ui:Button text="前往编辑场景" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnGotoEditorScene" style="width: auto; align-items: stretch; white-space: normal; flex-shrink: 0; flex-grow: 1;" />
+            <ui:Button text="返回上一场景" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnReturnLastScene" style="width: auto; align-items: stretch; white-space: normal; flex-grow: 1;" />
+            <ui:Label tabindex="-1" text="选择模型预设体" parse-escape-sequences="true" display-tooltip-when-elided="true" focusable="false" name="Label" style="justify-content: center; align-items: center; align-self: center; width: 150px; -unity-text-align: middle-center; flex-grow: 0;" />
+            <uie:ObjectField name="OfModelPrefab" allow-scene-objects="true" type="UnityEngine.GameObject, UnityEngine.CoreModule" style="width: auto; align-items: center; flex-shrink: 0; flex-grow: 1; flex-basis: auto; min-width: 100px; max-width: 200px; justify-content: center; align-self: center;" />
+            <ui:Button text="加载模型" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnLoadModel" style="margin-left: 10px; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="SecondLine" style="flex-grow: 1; flex-direction: row; height: 30px; max-width: none; min-width: auto;">
+            <ui:Label tabindex="-1" text="加载编辑器文件" parse-escape-sequences="true" display-tooltip-when-elided="true" style="justify-content: center; align-self: center; align-items: center; -unity-text-align: middle-center; width: 150px; flex-grow: 0;" />
+            <uie:ObjectField name="OfFileConfig" allow-scene-objects="false" type="Action.ActionClip, Assembly-CSharp" style="width: auto; align-items: center; flex-shrink: 0; flex-grow: 1; flex-basis: auto; min-width: 100px; max-width: 200px; align-self: center; justify-content: center;" />
+            <ui:Label tabindex="-1" text="动作名称" parse-escape-sequences="true" display-tooltip-when-elided="true" style="justify-content: center; align-self: center; align-items: center; -unity-text-align: middle-center; width: 100px; flex-grow: 0;" />
+            <ui:TextField picking-mode="Ignore" name="TfActionName" password="false" tooltip="动作名称" style="font-size: 14px; width: 150px; flex-shrink: 0; flex-grow: 1; height: 25px; justify-content: flex-start; align-self: center;" />
+            <ui:Button text="保存配置" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnSaveConfig" style="margin-left: 20px; flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="LayoutContent" style="flex-grow: 1;">
+        <ui:VisualElement name="BarFrame" style="flex-grow: 0; height: 25px; border-bottom-width: 1px; flex-direction: row; flex-shrink: 0; border-left-color: rgb(26, 26, 26); border-right-color: rgb(26, 26, 26); border-top-color: rgb(26, 26, 26); border-bottom-color: rgb(26, 26, 26);">
+            <ui:VisualElement name="BarFrameConsole" style="flex-grow: 0; flex-shrink: 0; width: 250px; border-left-color: rgb(26, 26, 26); border-right-color: rgb(26, 26, 26); border-top-color: rgb(26, 26, 26); border-bottom-color: rgb(26, 26, 26); border-right-width: 1px; flex-direction: row; align-items: stretch; justify-content: space-around; padding-top: 1px; padding-bottom: 1px;">
+                <ui:Button text="←" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnPreviousFrame" style="background-image: none; font-size: 16px; -unity-font-style: bold;" />
+                <ui:Button text="▶■" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnPlayOrPause" style="-unity-font-style: bold;" />
+                <ui:Button text="→" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnNextFrame" style="font-size: 16px; -unity-font-style: bold;" />
+                <ui:TextField picking-mode="Ignore" value="0" name="TfCurrentFrame" is-delayed="true" keyboard-type="NumberPad" style="width: 30px;" />
+                <ui:Label tabindex="-1" text="/" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LabelFrameSeperator" style="font-size: 16px; justify-content: center; align-items: center; align-self: center;" />
+                <ui:TextField picking-mode="Ignore" value="100" name="TfTotalFrames" is-delayed="true" keyboard-type="NumberPad" style="width: 30px;" />
+                <ui:EnumField type="Action.Editor.ActionEditorFrameRate, Assembly-CSharp-Editor" name="EfFrameRate" tabindex="0" value="FPS60" style="width: 60px;" />
+            </ui:VisualElement>
+            <ui:IMGUIContainer name="BarFrameTimescale" style="flex-grow: 1; margin-right: 10px; left: 15px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="LayoutContentList" style="flex-grow: 1; flex-direction: row; flex-shrink: 1;">
+            <ui:ScrollView name="SvChannelList" vertical-scroller-visibility="AlwaysVisible" horizontal-scroller-visibility="AlwaysVisible" mode="Vertical" style="width: 250px; min-height: auto; flex-grow: 0; min-width: 250px; margin-bottom: 12px;">
+                <ui:VisualElement name="ListChannel" style="flex-grow: 1; height: auto; min-height: auto;" />
+            </ui:ScrollView>
+            <ui:ScrollView name="SvTrackList" mode="VerticalAndHorizontal" vertical-scroller-visibility="AlwaysVisible" horizontal-scroller-visibility="AlwaysVisible" style="flex-grow: 1; width: auto; min-height: auto;">
+                <ui:VisualElement name="ListTrack" style="flex-grow: 0; flex-shrink: 0; width: 0; height: auto; min-height: auto; left: 15px;" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement name="LineFrameSelected" style="flex-grow: 1; flex-shrink: 0; width: 1px; height: 100%; position: absolute; left: 265px; background-color: rgba(0, 0, 0, 0); margin-bottom: 0; padding-bottom: 12px; margin-left: 0;">
+            <ui:VisualElement name="LineFrameSelectedColor" style="flex-grow: 1; background-color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

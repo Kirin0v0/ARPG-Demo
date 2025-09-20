@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Framework/Common/Blackboard/Editor/BlackboardInspector.uss?fileID=7433441132597879392&amp;guid=040834df6cce6064f9fc0581161ea819&amp;type=3#BlackboardInspector" />
+    <ui:ScrollView>
+        <ui:VisualElement name="VerticalLayout" style="flex-grow: 1;">
+            <uie:ObjectField label="Script" name="ObjectField" style="height: 21px; align-self: auto; align-items: auto; flex-grow: 0; flex-shrink: 0;" />
+            <uie:Toolbar>
+                <ui:Label tabindex="-1" text="Parameter" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="align-self: auto; justify-content: flex-start; align-items: auto; -unity-text-align: middle-left; margin-left: 4px; -unity-font-style: bold;" />
+                <ui:TextField picking-mode="Ignore" password="false" is-delayed="true" multiline="false" name="TfParameterName" style="flex-grow: 1; font-size: 12px;" />
+                <uie:ToolbarButton text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbAddParameter" style="font-size: 16px; -unity-font-style: bold; padding-top: 0; padding-bottom: 0; -unity-text-align: upper-center; flex-grow: 0; left: auto; right: auto; position: relative; margin-left: 10px; justify-content: center; align-self: center; align-items: stretch; width: 20px;" />
+                <uie:ToolbarButton text="-" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbRemoveParameter" style="font-size: 16px; -unity-font-style: bold; padding-top: 0; padding-bottom: 0; -unity-text-align: upper-center; flex-grow: 0; left: auto; right: auto; position: relative; margin-left: 0; justify-content: center; align-self: center; align-items: stretch; width: 20px;" />
+            </uie:Toolbar>
+            <ui:ListView name="ListView" style="flex-grow: 1; background-color: rgb(60, 60, 60);" />
+            <ui:IMGUIContainer name="IMGUIContainer" style="flex-grow: 0; height: auto;" />
+        </ui:VisualElement>
+    </ui:ScrollView>
+</ui:UXML>

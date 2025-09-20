@@ -1,0 +1,28 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Scripts/Skill/Editor/SkillFlowEditorWindow.uss?fileID=7433441132597879392&amp;guid=d7cf323188b64f21bcab593bf0ff9168&amp;type=3#SkillFlowEditorWindow" />
+    <uie:Toolbar>
+        <ui:VisualElement name="LayoutStart" style="flex-grow: 1; flex-direction: row;">
+            <ui:TextField label="创建路径" name="TfFileDirectory" readonly="false" style="width: 350px; -unity-text-align: middle-left; align-self: center;" />
+            <uie:ToolbarButton text="选择" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbSelect" />
+            <ui:TextField label="技能Id" name="TfSkillId" keyboard-type="Default" style="width: 150px; align-self: center; -unity-text-align: middle-left;" />
+            <uie:ToolbarButton text="创建" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbCreateNew" />
+        </ui:VisualElement>
+        <ui:VisualElement name="LayoutEnd" style="flex-grow: 1; flex-direction: row-reverse; flex-shrink: 1;">
+            <uie:ToolbarButton text="应用" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbApply" style="align-self: center;" />
+            <uie:ToolbarButton text="撤销" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbRevert" style="align-self: center;" />
+            <uie:ObjectField label="技能流文件" name="OfSkillFlow" type="Skill.SkillFlow, Assembly-CSharp" style="-unity-text-align: middle-left; align-self: auto;" />
+        </ui:VisualElement>
+    </uie:Toolbar>
+    <Framework.Common.Editor.UI.TwoPanelSpiltView fixed-pane-initial-dimension="200" style="display: flex; flex-direction: column;">
+        <ui:VisualElement name="LeftLayout" style="flex-grow: 1; width: auto; background-color: rgb(56, 56, 56); flex-shrink: 1;">
+            <ui:VisualElement name="InspectorLayout" style="flex-grow: 1; height: auto; flex-shrink: 1; justify-content: flex-start;">
+                <ui:Label tabindex="-1" text="检查窗口" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="true" style="background-color: rgb(40, 40, 40); color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-left: 4px; font-size: 12px; padding-top: 0; padding-right: 0; padding-bottom: 0; height: 20px; -unity-text-align: middle-left;" />
+                <Skill.Editor.UI.SkillFlowInspectorView name="SkillFlowInspectorView" style="flex-grow: 1; background-color: rgb(56, 56, 56);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="RightLayout" style="flex-grow: 1; flex-shrink: 1;">
+            <ui:Label tabindex="-1" text="技能流窗口" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; background-color: rgb(56, 56, 56); color: rgb(255, 255, 255); padding-left: 8px; font-size: 12px; padding-top: 0; padding-bottom: 0; padding-right: 0; height: 20px; -unity-text-align: middle-left;" />
+            <Skill.Editor.UI.SkillFlowGraphView name="SkillFlowGraphView" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </Framework.Common.Editor.UI.TwoPanelSpiltView>
+</ui:UXML>

@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="ChannelGroupTemplate" style="flex-grow: 1; height: auto; align-items: stretch; justify-content: flex-start; background-color: rgba(0, 0, 0, 0); flex-direction: column; align-self: auto; flex-shrink: 1; color: rgba(0, 0, 0, 0); margin-right: 4px; margin-top: 0; margin-bottom: 0; margin-left: 4px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0;">
+        <ui:VisualElement name="LayoutChannelGroup" style="flex-grow: 0; height: 40px; flex-direction: row; align-items: center; background-color: rgb(149, 149, 149); margin-right: 0; margin-left: 0; margin-top: 4px; margin-bottom: 0; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;">
+            <ui:Label tabindex="-1" text="默认通道" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LabelChannelGroupName" style="margin-top: 0; margin-right: 10px; margin-bottom: 0; margin-left: 10px; -unity-font-style: bold; flex-grow: 1; justify-content: flex-start; align-self: auto; align-items: auto; -unity-text-align: upper-center; color: rgb(255, 255, 255); font-size: 16px;" />
+            <ui:Button text="⁝" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnMore" style="font-size: 16px; -unity-font-style: bold; flex-shrink: 0; margin-right: 8px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ListChildChannel" style="flex-grow: 1; flex-direction: column; left: auto; width: 95%; flex-shrink: 1; justify-content: flex-start; align-self: flex-end;" />
+    </ui:VisualElement>
+</ui:UXML>

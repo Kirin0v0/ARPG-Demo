@@ -1,0 +1,103 @@
+#node-border {
+    background-color: rgb(56, 56, 56);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#input {
+    align-items: center;
+}
+
+#output {
+    align-items: center;
+}
+
+#selection-border {
+    border-left-color: rgb(64, 170, 223);
+    border-right-color: rgb(64, 170, 223);
+    border-top-color: rgb(64, 170, 223);
+    border-bottom-color: rgb(64, 170, 223);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+:hover > #selection-border {
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}
+
+:selected > #selection-border {
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}
+
+:hover:selected > #selection-border {
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+}
+
+.node {
+    min-width: 150px;
+}
+
+#divider {
+    min-height: auto;
+    background-color: rgba(140, 140, 140, 0.17);
+    height: 1px;
+}
+
+.root #input {
+    background-color: rgb(0, 78, 100);
+    min-height: 24px;
+}
+
+.composite #input {
+    background-color: rgb(135, 195, 143);
+}
+
+.decorator #input {
+    background-color: rgb(244, 240, 187);
+}
+
+.action #input {
+    background-color: rgb(67, 41, 31);
+}
+
+.running #node-state {
+    background-color: rgb(252, 191, 73);
+}
+
+.success #node-state {
+    background-color: rgb(0, 127, 95);
+}
+
+.failure #node-state {
+    background-color: rgb(239, 35, 60);
+}

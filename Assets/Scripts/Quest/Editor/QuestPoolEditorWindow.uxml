@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Scripts/Quest/Editor/QuestPoolEditorWindow.uss?fileID=7433441132597879392&amp;guid=e20163e17adf42519e3ada39e9f16435&amp;type=3#QuestPoolEditorWindow" />
+    <uie:Toolbar style="flex-direction: row-reverse;">
+        <uie:ToolbarButton text="应用" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbApply" style="align-self: center;" />
+        <uie:ToolbarButton text="撤销" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbRevert" style="align-self: center;" />
+        <uie:ObjectField label="任务池文件" name="OfQuestPool" type="Quest.QuestPool, Assembly-CSharp" style="-unity-text-align: middle-left; align-self: auto;" />
+    </uie:Toolbar>
+    <Framework.Common.Editor.UI.TwoPanelSpiltView fixed-pane-initial-dimension="180" style="display: flex; flex-direction: column;">
+        <ui:VisualElement name="LeftLayout" style="flex-grow: 1; width: auto; background-color: rgb(56, 56, 56); flex-shrink: 1; min-width: 180px;">
+            <ui:VisualElement name="HeadLayout" style="flex-grow: 0; height: 20px; flex-direction: row; background-color: rgb(40, 40, 40);">
+                <ui:Label tabindex="-1" text="任务列表" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="true" name="Label" style="color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-left: 4px; font-size: 12px; padding-top: 0; padding-right: 0; padding-bottom: 0; height: auto; -unity-text-align: middle-left; flex-grow: 1;" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnAddQuest" text="+" />
+            </ui:VisualElement>
+            <ui:ListView name="LvQuestList" fixed-item-height="60" style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="RightLayout" style="flex-grow: 1; flex-shrink: 1;">
+            <ui:VisualElement name="HeadLayout" style="flex-grow: 0; height: 20px; flex-direction: row; background-color: rgb(40, 40, 40);">
+                <ui:Label tabindex="-1" text="任务窗口" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; color: rgb(255, 255, 255); padding-left: 8px; font-size: 12px; padding-top: 0; padding-bottom: 0; padding-right: 0; height: 20px; -unity-text-align: middle-left; flex-grow: 1;" />
+                <ui:Button text="删除任务" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnDeleteQuest" style="visibility: hidden;" />
+            </ui:VisualElement>
+            <ui:ScrollView style="flex-grow: 1;">
+                <ui:IMGUIContainer name="QuestConfigContainer" style="flex-grow: 1; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </Framework.Common.Editor.UI.TwoPanelSpiltView>
+</ui:UXML>

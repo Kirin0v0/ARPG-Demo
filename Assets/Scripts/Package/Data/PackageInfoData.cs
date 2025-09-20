@@ -1,0 +1,34 @@
+namespace Package.Data {
+public class PackageInfoData 
+{
+    public int Id;
+    public string Type;
+    public string Name;
+    public string Introduction;
+    public int Price;
+    public string Thumbnail;
+    public string QuantitativeRestriction;
+    public int GroupMaximum;
+    public string WeaponType;
+    public int WeaponAppearanceId;
+    public string GearPart;
+    public int GearAppearanceId;
+    public int MaxHp;
+    public int MaxMp;
+    public float DefenceDamageMultiplier;
+    public float DefenceBreakResumeSpeed;
+    public int Stamina;
+    public int Strength;
+    public int Magic;
+    public int Reaction;
+    public int Luck;
+    public string WeaponSkills;
+    public string ItemAppearancePrefab;
+    public int Hp;
+    public int Mp;
+    public string BuffId;
+    public int BuffStack;
+    public float BuffDuration;
+    public string ItemSkills;
+    public string MaterialAppearancePrefab;
+}}

@@ -1,0 +1,33 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Scripts/Package/Editor/PackageListEditorWindow.uss?fileID=7433441132597879392&amp;guid=c5fd114420a445b7a68dfbadc1db8001&amp;type=3#PackageListEditorWindow" />
+    <uie:Toolbar name="ImportToolbar" style="flex-direction: row-reverse;">
+        <uie:ToolbarButton text="导入" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbImport" style="align-self: center;" />
+        <uie:ObjectField label="装备外观二进制文件" name="OfGearAppearanceBinary" allow-scene-objects="false" type="UnityEditor.DefaultAsset, UnityEditor.CoreModule" style="-unity-text-align: middle-left; align-self: auto; height: auto; width: 250px;" />
+        <uie:ObjectField label="武器外观二进制文件" name="OfWeaponAppearanceBinary" allow-scene-objects="false" type="UnityEditor.DefaultAsset, UnityEditor.CoreModule" style="-unity-text-align: middle-left; align-self: auto; width: 250px;" />
+        <uie:ObjectField label="物品二进制文件（可选）" name="OfPackageBinary" allow-scene-objects="false" type="UnityEditor.DefaultAsset, UnityEditor.CoreModule" style="-unity-text-align: middle-left; align-self: auto; width: 250px;" />
+    </uie:Toolbar>
+    <uie:Toolbar name="ExportToolbar" style="flex-direction: row-reverse;">
+        <uie:ToolbarButton text="导出" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbExport" style="align-self: center;" />
+        <ui:TextField picking-mode="Ignore" label="物品分页名" name="TfPackageSheet" style="width: 200px;" />
+        <uie:ObjectField label="物品Excel表" name="OfPackageExcel" allow-scene-objects="false" type="UnityEditor.DefaultAsset, UnityEditor.CoreModule" style="-unity-text-align: middle-left; align-self: auto; width: 250px;" />
+    </uie:Toolbar>
+    <Framework.Common.Editor.UI.TwoPanelSpiltView fixed-pane-initial-dimension="180" style="display: flex; flex-direction: column;">
+        <ui:VisualElement name="LeftLayout" style="flex-grow: 1; width: auto; background-color: rgb(56, 56, 56); flex-shrink: 1; min-width: 180px;">
+            <ui:VisualElement name="HeadLayout" style="flex-grow: 0; height: 20px; flex-direction: row; background-color: rgb(40, 40, 40);">
+                <ui:Label tabindex="-1" text="物品列表" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="true" name="Label" style="color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-left: 4px; font-size: 12px; padding-top: 0; padding-right: 0; padding-bottom: 0; height: auto; -unity-text-align: middle-left; flex-grow: 1;" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnAddPackage" text="+" style="visibility: hidden;" />
+            </ui:VisualElement>
+            <ui:ListView name="LvPackageList" fixed-item-height="60" style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="RightLayout" style="flex-grow: 1; flex-shrink: 1;">
+            <ui:VisualElement name="HeadLayout" style="flex-grow: 0; height: 20px; flex-direction: row; background-color: rgb(40, 40, 40);">
+                <ui:Label tabindex="-1" text="物品窗口" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; color: rgb(255, 255, 255); padding-left: 8px; font-size: 12px; padding-top: 0; padding-bottom: 0; padding-right: 0; height: 20px; -unity-text-align: middle-left; flex-grow: 1;" />
+                <ui:Button text="复制物品到新建物品上" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnCopyPackageToNew" style="visibility: hidden;" />
+                <ui:Button text="删除物品" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnDeletePackage" style="visibility: hidden;" />
+            </ui:VisualElement>
+            <ui:ScrollView style="flex-grow: 1;">
+                <ui:IMGUIContainer name="PackageDetailContainer" style="flex-grow: 1; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </Framework.Common.Editor.UI.TwoPanelSpiltView>
+</ui:UXML>

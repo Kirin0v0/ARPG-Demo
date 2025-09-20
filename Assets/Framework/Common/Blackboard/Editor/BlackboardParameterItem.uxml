@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="LinearLayout" style="flex-grow: 0; flex-direction: row; height: 30px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px;">
+        <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LabelParameterName" style="align-self: auto; justify-content: center; -unity-text-align: middle-left; flex-grow: 1; flex-shrink: 0; align-items: stretch; white-space: normal; flex-wrap: wrap; text-overflow: clip; max-width: none; width: 0; margin-left: 4px;" />
+        <ui:IntegerField value="0" name="IfIntValue" is-delayed="true" style="flex-grow: 0; flex-basis: auto; width: 80px;" />
+        <ui:FloatField value="0" name="FfFloatValue" is-delayed="true" readonly="false" style="flex-grow: 0; display: flex; visibility: visible; width: 80px;" />
+        <ui:Toggle name="TogBooleanValue" style="flex-grow: 0; width: 80px; margin-top: 4px;" />
+        <ui:TextField picking-mode="Ignore" name="TfStringValue" style="width: 80px;" />
+    </ui:VisualElement>
+</ui:UXML>

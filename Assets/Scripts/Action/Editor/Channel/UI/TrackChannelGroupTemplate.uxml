@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="TrackChannelGroupTemplate" style="flex-grow: 1; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-color: rgba(0, 0, 0, 0); margin-top: 0; height: auto; flex-shrink: 1; flex-direction: column;">
+        <ui:VisualElement name="LayoutTrackChannelGroup" style="flex-grow: 0; height: 40px; margin-top: 4px; background-color: rgb(149, 149, 149); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;" />
+        <ui:VisualElement name="ListChildTrackChannel" style="flex-grow: 1; margin-top: 0;" />
+    </ui:VisualElement>
+</ui:UXML>

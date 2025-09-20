@@ -1,0 +1,29 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Framework/Common/BehaviourTree/Editor/UI/BehaviourTreeNodeView.uss?fileID=7433441132597879392&amp;guid=7261969e4148f974cbcc07226dd03cd8&amp;type=3#BehaviourTreeNodeView" />
+    <ui:VisualElement name="node-state" style="flex-grow: 1; position: absolute; left: 0; top: 0; right: 0; bottom: 0;" />
+    <ui:VisualElement name="selection-border" picking-mode="Ignore" />
+    <ui:VisualElement name="node-border" style="display: flex;">
+        <ui:VisualElement name="contents">
+            <ui:VisualElement name="input">
+                <ui:Label tabindex="-1" text="X" parse-escape-sequences="true" display-tooltip-when-elided="true" name="aborted" style="position: absolute; font-size: 24px; color: rgb(221, 65, 65); right: 8px; display: none; -unity-font-style: bold;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="divider" class="vertical" />
+            <ui:VisualElement name="horizontal-layout" style="flex-grow: 1; flex-direction: row;">
+                <ui:Label tabindex="-1" text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="executeOrder" style="color: rgb(255, 255, 255); -unity-font-style: bold; flex-grow: 0; flex-shrink: 1; -unity-text-align: middle-center; font-size: 14px; min-width: 30px; margin-right: 0; padding-right: 1px;" />
+                <ui:VisualElement name="vertical-layout" style="flex-grow: 1;">
+                    <ui:VisualElement name="title">
+                        <ui:Label name="title-label" class="unity-text-element unity-label" style="align-self: auto; align-items: auto; -unity-text-align: upper-center; -unity-font-style: bold; color: rgb(255, 255, 255); padding-right: 1px; max-width: 200px; white-space: normal;" />
+                        <ui:VisualElement name="title-button-container" style="background-color: rgba(0, 0, 0, 0);">
+                            <ui:VisualElement name="collapse-button">
+                                <ui:VisualElement name="icon" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:Label tabindex="-1" text="This is a description" parse-escape-sequences="true" display-tooltip-when-elided="true" name="description" enable-rich-text="true" style="-unity-text-align: upper-center; font-size: 10px; padding-right: 1px; flex-wrap: nowrap; white-space: normal; max-width: 200px; max-height: none; text-overflow: clip;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="divider" class="horizontal" />
+            <ui:VisualElement name="output" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

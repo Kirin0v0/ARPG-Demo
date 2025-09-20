@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Scripts/Buff/Editor/BuffPoolEditorWindow.uss?fileID=7433441132597879392&amp;guid=ab09b1843614aba47a989d214f08a0e9&amp;type=3#BuffPoolEditorWindow" />
+    <uie:Toolbar style="flex-direction: row-reverse;">
+        <uie:ToolbarButton text="应用" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbApply" style="align-self: center;" />
+        <uie:ToolbarButton text="撤销" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbRevert" style="align-self: center;" />
+        <uie:ObjectField label="Buff池文件" name="OfBuffPool" type="Buff.BuffPool, Assembly-CSharp" style="-unity-text-align: middle-left; align-self: auto;" />
+    </uie:Toolbar>
+    <Framework.Common.Editor.UI.TwoPanelSpiltView fixed-pane-initial-dimension="180" style="display: flex; flex-direction: column;">
+        <ui:VisualElement name="LeftLayout" style="flex-grow: 1; width: auto; background-color: rgb(56, 56, 56); flex-shrink: 1; min-width: 180px;">
+            <ui:VisualElement name="HeadLayout" style="flex-grow: 0; height: 20px; flex-direction: row; background-color: rgb(40, 40, 40);">
+                <ui:Label tabindex="-1" text="Buff列表" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="true" name="Label" style="color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-left: 4px; font-size: 12px; padding-top: 0; padding-right: 0; padding-bottom: 0; height: auto; -unity-text-align: middle-left; flex-grow: 1;" />
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnAddBuff" text="+" />
+            </ui:VisualElement>
+            <ui:ListView name="LvBuffList" fixed-item-height="60" style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="RightLayout" style="flex-grow: 1; flex-shrink: 1;">
+            <ui:VisualElement name="HeadLayout" style="flex-grow: 0; height: 20px; flex-direction: row; background-color: rgb(40, 40, 40);">
+                <ui:Label tabindex="-1" text="Buff窗口" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; color: rgb(255, 255, 255); padding-left: 8px; font-size: 12px; padding-top: 0; padding-bottom: 0; padding-right: 0; height: 20px; -unity-text-align: middle-left; flex-grow: 1;" />
+                <ui:Button text="复制Buff到新建Buff上" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnCopyBuffToNew" style="visibility: hidden;" />
+                <ui:Button text="删除Buff" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BtnDeleteBuff" style="visibility: hidden;" />
+            </ui:VisualElement>
+            <ui:ScrollView style="flex-grow: 1;">
+                <ui:IMGUIContainer name="BuffConfigContainer" style="flex-grow: 1; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </Framework.Common.Editor.UI.TwoPanelSpiltView>
+</ui:UXML>

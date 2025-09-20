@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Scripts/Combo/Graph/Editor/ComboGraphEditorWindow.uss?fileID=7433441132597879392&amp;guid=2c65ff78fef64c06a9a2bb95f732003a&amp;type=3#ComboGraphEditorWindow" />
+    <uie:Toolbar style="flex-direction: row-reverse;">
+        <uie:ToolbarButton text="应用" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbApply" style="align-self: center;" />
+        <uie:ToolbarButton text="撤销" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TbRevert" style="align-self: center;" />
+        <uie:ObjectField label="连招图文件" name="OfComboGraph" type="Combo.Graph.ComboGraph, Assembly-CSharp" style="justify-content: flex-start; align-self: auto; width: auto;" />
+    </uie:Toolbar>
+    <Framework.Common.Editor.UI.TwoPanelSpiltView fixed-pane-initial-dimension="200" style="display: flex; flex-direction: column;">
+        <ui:VisualElement name="LeftLayout" style="flex-grow: 1; width: auto; background-color: rgb(56, 56, 56); flex-shrink: 1;">
+            <Framework.Common.Editor.UI.TwoPanelSpiltView orientation="Vertical" fixed-pane-initial-dimension="200">
+                <ui:VisualElement name="InspectorLayout" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="检查窗口" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="true" style="background-color: rgb(40, 40, 40); color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-left: 4px; font-size: 12px; padding-top: 0; padding-right: 0; padding-bottom: 0; height: 20px; -unity-text-align: middle-left;" />
+                    <Combo.Graph.Editor.UI.ComboGraphInspectorView name="ComboGraphInspectorView" style="flex-grow: 1; background-color: rgb(56, 56, 56);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="BlackboardLayout" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="连招图黑板" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="true" style="background-color: rgb(40, 40, 40); color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-left: 4px; font-size: 12px; -unity-text-align: middle-left; padding-top: 0; padding-right: 0; padding-bottom: 0; height: 20px;" />
+                    <Framework.Common.Blackboard.Editor.UI.BlackboardView name="ComboGraphBlackboardView" style="flex-grow: 1; background-color: rgb(56, 56, 56);" />
+                </ui:VisualElement>
+            </Framework.Common.Editor.UI.TwoPanelSpiltView>
+        </ui:VisualElement>
+        <ui:VisualElement name="RightLayout" style="flex-grow: 1; flex-shrink: 1;">
+            <ui:Label tabindex="-1" text="连招图窗口" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; background-color: rgb(56, 56, 56); color: rgb(255, 255, 255); padding-left: 8px; font-size: 12px; padding-top: 0; padding-bottom: 0; padding-right: 0; height: 20px; -unity-text-align: middle-left;" />
+            <ui:IMGUIContainer name="ComboGraphContainer" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </Framework.Common.Editor.UI.TwoPanelSpiltView>
+</ui:UXML>

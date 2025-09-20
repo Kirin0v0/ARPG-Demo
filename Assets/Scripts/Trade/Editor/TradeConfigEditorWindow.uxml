@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Scripts/Trade/Editor/TradeConfigEditorWindow.uss?fileID=7433441132597879392&amp;guid=b2498610a0e146539380f13630b37889&amp;type=3#TradeConfigEditorWindow" />
+    <Framework.Common.Editor.UI.TwoPanelSpiltView name="TwoPanelSpiltView" fixed-pane-initial-dimension="260">
+        <ui:VisualElement name="ConfigurationLayout" style="flex-grow: 1; min-width: 260px; width: auto; flex-shrink: 1;">
+            <uie:Toolbar style="flex-direction: row;">
+                <ui:Label tabindex="-1" text="配置窗口" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; color: rgb(255, 255, 255); padding-left: 8px; font-size: 12px; padding-top: 0; padding-bottom: 0; padding-right: 0; height: 20px; -unity-text-align: middle-left; flex-grow: 1; flex-shrink: 1;" />
+            </uie:Toolbar>
+            <uie:Toolbar style="background-color: rgb(40, 40, 40); flex-direction: row-reverse;">
+                <uie:ObjectField label="物品二进制文件" name="OfPackageBinary" allow-scene-objects="false" type="UnityEditor.DefaultAsset, UnityEditor.CoreModule" style="-unity-text-align: middle-left; align-self: auto; height: auto; width: 250px; color: rgb(255, 255, 255);" />
+            </uie:Toolbar>
+            <ui:ScrollView>
+                <ui:IMGUIContainer name="TradeEditorContainer" style="flex-grow: 1;" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement name="TradeLayout" style="flex-grow: 1; flex-shrink: 1;">
+            <uie:Toolbar>
+                <ui:Label tabindex="-1" text="交易窗口" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; color: rgb(255, 255, 255); padding-left: 8px; font-size: 12px; padding-top: 0; padding-bottom: 0; padding-right: 0; height: 20px; -unity-text-align: middle-left; flex-grow: 1; flex-shrink: 1;" />
+            </uie:Toolbar>
+            <uie:Toolbar style="background-color: rgb(40, 40, 40); flex-direction: row-reverse;">
+                <uie:ObjectField label="交易文件" name="OfTradeConfig" type="Trade.Config.TradeConfig, Assembly-CSharp" style="-unity-text-align: middle-left; align-self: auto; color: rgb(255, 255, 255);" />
+            </uie:Toolbar>
+            <ui:ScrollView>
+                <ui:IMGUIContainer name="TradeConfigContainer" style="flex-grow: 1;" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </Framework.Common.Editor.UI.TwoPanelSpiltView>
+</ui:UXML>
