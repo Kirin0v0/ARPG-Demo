@@ -13,3 +13,22 @@ ARPG项目历时八个月，完成了包括但不限于玩家状态机、敌人�
 * 【Unity】一个开源的通用Buff系统 下载+教程：https://www.bilibili.com/video/BV16e411H7Vx 
 * RecyclerView，基于UGUI的列表解决方案：https://www.bilibili.com/video/BV1RAmxYXEmb 
 * 用Unity制作一个极具扩展性的顶视角射击游戏战斗系统：https://zhuanlan.zhihu.com/p/416805924 
+
+
+
+# 框架源码位置
+
+* 滚动复用列表RecyclerView：Assets\Framework\Common\UI\RecyclerView
+
+* 伤害/Buff跳字框架：Assets\Framework\Common\UI\PopupText
+* 动作框架及编辑器：Assets\Scripts\Action
+* 连招框架及编辑器：Assets\Scripts\Combo
+* 技能框架及编辑器：Assets\Scripts\Skill
+* 时间缩放系统：Assets\Scripts\TimeScale
+* 伤害逻辑：Assets\Scripts\Damage
+* 对话业务（引入NodeCanvas的对话树）：Assets\Scripts\Dialogue
+* 背包管理器及物品编辑器：Assets\Scripts\Package
+* 任务系统及编辑器：Assets\Scripts\Quest
+* 交易系统及编辑器：Assets\Scripts\Trade
+* 存档系统：Assets\Scripts\Archive
+
